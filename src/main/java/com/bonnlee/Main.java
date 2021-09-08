@@ -9,6 +9,8 @@ public class Main {
        ApplicationContext context = new  ClassPathXmlApplicationContext("applicationContext.xml");
 
        Student stu = (Student) context.getBean("stu");
+       Student stu2 = (Student) context.getBean("stu");
+        System.out.println(stu == stu2);
 
     }
 }
